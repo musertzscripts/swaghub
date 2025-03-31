@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "swag hub | troll hub",
+   Name = "swag hub v1.0 | Script Hub",
    Icon = 11010471695, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "setting up gui...",
    LoadingSubtitle = "by kazumi (@Musertz)",
@@ -65,8 +65,35 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "more coming soon",
+   Name = "touch fling [ FE ]",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/RHAe4iIS/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "more coming soon!",
    Callback = function()
    -- The function that takes place when the button is pressed
    end,
 })
+
+local AimTab = Window:CreateTab("aimbot", 4483362458) -- Title, Image
+
+local Button = AimTab:CreateButton({
+   Name = "Aimbot by Zakuu",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/fAtBNuRN"))()
+   end,
+})
+
+local Button = AimTab:CreateButton({
+   Name = "ESP",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/TgD3qgQc"))()
+   end,
+})
+
+local CreditsTab = Window:CreateTab("Credits", 4483362458) -- Title, Image
+
+local Label = CreditsTab:CreateLabel("UI Creation: Rayfield, Creator: kazumi (@Musertz), All credits go to the scripters! (most of them are mine.)", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
